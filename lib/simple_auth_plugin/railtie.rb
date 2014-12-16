@@ -10,7 +10,7 @@ module SimpleAuthPlugin
       puts "SimpleAuthPlugin is loaded!"
       require 'simple_auth_plugin/authable'
       ActiveSupport.on_load(:action_controller) do
-        ActionController::Baes.send :include, Authable
+        ActionController::Base.send :include, Authable
       end
     end
 
