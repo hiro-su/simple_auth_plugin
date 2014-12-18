@@ -15,7 +15,7 @@ module SimpleAuthPlugin
     end
 
     initializer "simple_auth.set_config" do
-      #config.simple_auth.user_class  ||= User
+      #config.simple_auth.user_class ||= User
       config.simple_auth.session_key ||= :id
     end
 

@@ -4,7 +4,7 @@ module SimpleAuthPlugin
     class SignInRequired < StandardError; end
 
     included do
-      helper_method :current_uesr
+      helper_method :current_user
     end
 
     def auth_session_key

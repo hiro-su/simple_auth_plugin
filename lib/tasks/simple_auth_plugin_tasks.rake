@@ -6,7 +6,7 @@ namespace :simple_auth do
   namespace :generate do
     desc "Generate a model for authorization"
     task :model do
-      system "rails g model user name:string password:string"
+      sh "rails g model user name:string password:string"
     end
   end
 end
